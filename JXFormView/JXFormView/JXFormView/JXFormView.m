@@ -51,8 +51,8 @@ typedef NS_ENUM(NSInteger, FormLinePosition) {
 
 - (void)layoutSubviews
 {
-    [form  createCellView];
-    [form  drawLineView];
+    [self  createCellView];
+    [self  drawLineView];
 }
 
 - (void)createCellView
