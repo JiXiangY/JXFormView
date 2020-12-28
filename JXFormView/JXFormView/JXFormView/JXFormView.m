@@ -45,9 +45,14 @@ typedef NS_ENUM(NSInteger, FormLinePosition) {
     form.rows = rows;
     form.columns = columns;
     form.delegate = delegate;
+  
+    return form;
+}
+
+- (void)layoutSubviews
+{
     [form  createCellView];
     [form  drawLineView];
-    return form;
 }
 
 - (void)createCellView
